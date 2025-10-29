@@ -24,3 +24,11 @@
 .site-footer a:hover {
     color: var(--link-color);
 }
+
+
+@media (max-width: 768px) {
+    .site-footer {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
