@@ -1,0 +1,26 @@
+.site-footer {
+    width: 100%; 
+    
+    margin-left: var(--sidebar-width); 
+    
+    padding: 30px 40px;
+    background-color: #f8f8f8;
+    color: var(--text-color-medium);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.site-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.site-footer a:hover {
+    color: var(--link-color);
+}
