@@ -1,0 +1,71 @@
+.module {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #ffffff;
+}
+
+.module-title {
+    font-size: 2em;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+
+.module.about-me p {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.skill-list .module-title {
+    margin-bottom: 25px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.95em;
+    font-weight: 500;
+    line-height: 1;
+    transition: background-color 0.2s;
+    cursor: default;
+}
+
+.skill-tag.hard {
+    background-color: var(--light-green-bg);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.skill-tag.product {
+    background-color: #f0f0f0;
+    color: var(--text-color-medium);
+    border: 1px solid #c0c0c0;
+}
+
+.skill-tag.tool {
+    background-color: #f7f7f7;
+    color: var(--text-color);
+    border: 1px solid #dddddd;
+}
+
+.skill-tag:hover {
+    background-color: #e8e8e8;
+}
