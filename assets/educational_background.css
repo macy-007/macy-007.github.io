@@ -80,3 +80,24 @@
     height: auto;
     border: 1px solid #e0e0e0;
 }
+
+@media (max-width: 768px) {
+    .education-item {
+        flex-direction: column;
+        padding: 15px;
+        border-left: none; 
+        border-top: 5px solid var(--primary-color);
+        margin-bottom: 20px;
+    }
+    
+    .education-details {
+        flex-basis: auto;
+        padding-right: 0;
+    }
+
+    .university-logo {
+        flex-basis: auto;
+        justify-content: flex-start; 
+        padding-top: 10px;
+    }
+}
