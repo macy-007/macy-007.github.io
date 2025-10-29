@@ -98,3 +98,27 @@ body {
   color: #009688;
   transform: scale(1.1);
 }
+
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; 
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .profile-card {
+    padding-top: 0;
+  }
+}
