@@ -1,9 +1,13 @@
 :root {
   --sidebar-width: 33.333%;
+  --primary-color: #2c5f2d;
   --light-blue: white;
   --link-color: #00796b;
+  --light-green-bg: #f5fff5;
   --text-color: #333;
-  --primary-color: #004d40;
+  --text-color-dark: #3a3a3a;
+  --text-color-medium: #4b4b4b;
+  --font-stack: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 body {
