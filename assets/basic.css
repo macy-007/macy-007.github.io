@@ -38,10 +38,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: auto;
   padding: 20px;
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow-y: hidden;
   text-align: center;
 }
 
@@ -57,9 +57,10 @@ body {
 }
 
 .profile-photo {
-  width: auto;
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .name {
