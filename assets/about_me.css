@@ -1,26 +1,36 @@
 .module {
     max-width: 800px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 0; 
+    border: none;
+    box-shadow: none;
+    background-color: transparent; 
+}
+
+.module.about-me {
+    padding: 15px; 
+    border: 1px solid #eeeeee; 
+    border-radius: 4px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
     background-color: #f7f7f7; 
     border-left: 5px solid var(--primary-color); 
 }
 
+
 .module-title {
-    font-size: 1.5em; 
-    color: var(--primary-color);
+    font-size: 1.15em; 
+    color: var(--primary-color); 
     font-weight: 600;
     margin-bottom: 5px; 
     padding-bottom: 3px;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: none; 
     display: inline-block;
 }
 
 .module.about-me p {
-    font-size: 1.05em;
+    font-size: 1em; 
     line-height: 1.5; 
-    color: var(--text-color);
+    color: #757575; 
     margin-top: 5px; 
     margin-bottom: 0;
 }
@@ -28,39 +38,40 @@
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px 0;
-    margin-top: 10px; 
+    gap: 8px;
+    padding: 8px 0;
+    margin-top: 8px; 
 }
 
 .skill-tag {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 6px 12px; 
     border-radius: 20px; 
-    font-size: 0.95em;
+    font-size: 0.85em; 
     font-weight: 500;
     line-height: 1;
     transition: background-color 0.2s, box-shadow 0.2s;
     cursor: default;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+    border: none;
 }
 
 .skill-tag.hard {
     background-color: var(--light-green-bg);
-    color: var(--primary-color);
+    color: #757575; 
 }
 
 .skill-tag.product {
-    background-color: #e6f1e6; /* 浅灰绿色 */
-    color: var(--text-color-dark); 
+    background-color: #e6f1e6; 
+    color: #757575; 
 }
 
 .skill-tag.tool {
     background-color: #f0f0f0; 
-    color: var(--text-color-medium);
+    color: #757575; 
 }
 
 .skill-tag:hover {
-    background-color: #e0e0e0; 
+    background-color: #e0e0e0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
