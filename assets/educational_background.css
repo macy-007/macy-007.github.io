@@ -2,9 +2,14 @@
     max-width: 800px;
     margin: 40px auto;
     padding: 0;
+        display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
 }
 
 .module-title {
+    grid-column: 1 / -1; 
+    
     font-size: 2em;
     color: var(--primary-color);
     font-weight: 600;
@@ -15,19 +20,51 @@
 }
 
 .education-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: var(--light-green-bg);
+    display: block; 
+    
+    margin-bottom: 0; 
+    padding: 15px; 
+    
+    background-color: #fcfcfc; 
     border-radius: 4px;
-    border-left: 5px solid var(--primary-color);
+    border: 1px solid #eeeeee;
+    border-left: 5px solid var(--primary-color); 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+
+.university-logo {
+    display: block; 
+    margin-bottom: 15px; 
+    
+    flex-basis: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 0;
+}
+
+.university-logo img {
+    width: 100%; 
+    height: 100px; 
+    object-fit: fill; */
+    
+    display: block;
+    border: none; 
+    border-radius: 4px;
+    margin-bottom: 5px; 
 }
 
 .education-details {
-    flex-basis: 85%;
-    padding-right: 20px;
+    flex-basis: auto; 
+    padding-right: 0;
+}
+
+.education-details h3 {
+    font-size: 1.3em;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 0; 
+    margin-bottom: 5px;
 }
 
 .education-details p:first-of-type {
@@ -35,15 +72,7 @@
     color: var(--text-color-medium);
     font-style: italic;
     margin-bottom: 8px;
-    margin-top: 0;
-}
-
-.education-details h3 {
-    font-size: 1.3em;
-    color: var(--primary-color);
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 5px;
+    
 }
 
 .education-details p:nth-of-type(2) {
@@ -52,7 +81,7 @@
     font-style: italic;
     font-weight: 400;
     margin-bottom: 15px;
-    margin-top: 0;
+    
 }
 
 .education-details ul {
@@ -68,36 +97,35 @@
     margin-bottom: 5px;
 }
 
-.university-logo {
-    flex-basis: 15%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-
-.university-logo img {
-    width: auto;
-    height: auto;
-    border: 1px solid #e0e0e0;
-}
-
 @media (max-width: 768px) {
+    .module.educational-background {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .module-title {
+        grid-column: 1 / 2; 
+    }
+    
     .education-item {
-        flex-direction: column;
+        border-left: 5px solid var(--primary-color); 
+        border-top: none; 
         padding: 15px;
-        border-left: none; 
-        border-top: 5px solid var(--primary-color);
         margin-bottom: 20px;
     }
     
+    .university-logo img {
+        height: 100px; 
+        width: auto; 
+        object-fit: cover; 
+    }
+
     .education-details {
-        flex-basis: auto;
         padding-right: 0;
     }
 
     .university-logo {
-        flex-basis: auto;
-        justify-content: flex-start; 
-        padding-top: 10px;
+        padding-top: 0;
+        margin-bottom: 15px; 
     }
 }
