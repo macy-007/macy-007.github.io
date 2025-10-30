@@ -58,21 +58,21 @@
 }
 
 .skill-tag.hard {
-    background-color: var(--light-green-bg);
+    background-color: var(--primary-color); 
     color: #757575; 
 }
 
 .skill-tag.product {
-    background-color: #e6f1e6; 
+    background-color: #a8c4a8; 
     color: #757575; 
 }
 
 .skill-tag.tool {
-    background-color: #f0f0f0; 
+    background-color: #e0e0e0; 
     color: #757575; 
 }
 
 .skill-tag:hover {
-    background-color: #e0e0e0;
+    background-color: #c0c0c0; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
