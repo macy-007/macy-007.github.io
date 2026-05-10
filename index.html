@@ -55,7 +55,7 @@
 
     <!-- Skills -->
     <section id="skills" class="skills-section">
-        <h2>Skills</h2>
+        <h2>Skills Set</h2>
         <div class="skills-container">
             <div class="skill-category">
                 <h3>Robotics & AI</h3>
@@ -100,7 +100,7 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section" style="background-color: #fdfdfd; padding: 60px 0;">
         <div class="container">
-            <h2>Projects</h2>
+            <h2>Projects Experience</h2>
             <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
                 <!-- Project 1: Autonomous Robot -->
                 <div class="project-card" onclick="openModal('modal-project-1')">
@@ -142,7 +142,7 @@
                         <div class="overlay-text"><i class="fas fa-search-plus"></i> View Details</div>
                     </div>
                     <div class="project-info">
-                        <h3>Xiaomi Studio AIoT Development Platform Training Camp</h3>
+                        <h3>Smart Sauna Room Thermometer Alarm</h3>
                         <p class="short-desc">C-based embedded development for an IoT temperature monitoring device.</p>
                     </div>
                 </div>
@@ -200,7 +200,6 @@
         </div>
     </section>
 
-
     <!-- Modal 1: Autonomous Robot -->
     <div id="modal-project-1" class="modal">
         <div class="modal-content">
@@ -215,17 +214,23 @@
             </div>
             <div class="modal-text">
                 <h3><i class="fas fa-info-circle"></i> Project Details</h3>
+                <!-- Overview Paragraph -->
                 <p style="color: #555; line-height: 1.6;">
-                    Developed an autonomous robotic system for navigating unknown environments, detecting colored objects, and performing object transportation tasks. 
-                    Led system integration and state machine design for high-level behavior logic, including search, approach, retrieval, and sorting. 
-                    Supported integration of a YOLOv8-based perception pipeline and ROS2 navigation stack, with simulation validation conducted in Gazebo prior to hardware deployment.
+                    Developed an autonomous robotic system designed for navigating unknown environments, detecting colored objects, and performing object transportation tasks.
                 </p>
+                <!-- Bullet Points -->
+                <ul style="color: #555; line-height: 1.6; margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Behavioral Logic:</strong> Led the state machine design for high-level autonomous behavior, managing search, approach, retrieval, and sorting states.</li>
+                    <li><strong>Perception & Navigation:</strong> Supported the integration of a YOLOv8-based computer vision pipeline with the ROS2 navigation stack.</li>
+                    <li><strong>Simulation & Validation:</strong> Conducted system validation and kinematic testing in Gazebo simulation prior to physical hardware deployment.</li>
+                </ul>
                 <div class="modal-links" style="margin-top: 15px;">
                     <a href="https://github.com/IvaJorgusheska/AERO62520-Robotic-Systems-Design-Project" target="_blank" class="btn-link">GitHub Repository <i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Modal 2: LiDAR -->
     <div id="modal-project-2" class="modal">
         <div class="modal-content">
@@ -240,6 +245,7 @@
             </div>
             <div class="modal-text">
                 <h3><i class="fas fa-info-circle"></i> Project Details</h3>
+                <!-- Overview Paragraph -->
                 <p style="color: #555; line-height: 1.6;">
                     Evaluated the SLAMTEC RPLIDAR A2M12 sensor under real-world conditions to map its performance beyond standard datasheet specifications. 
                     The testing process identified physical limitations and error rates, which provided necessary data to improve the obstacle avoidance and autonomous navigation integration on the Leo Rover platform.
@@ -247,6 +253,7 @@
             </div>
         </div>
     </div>
+
     <!-- Modal 3: Drones -->
     <div id="modal-project-3" class="modal">
         <div class="modal-content">
@@ -261,6 +268,7 @@
             </div>
             <div class="modal-text">
                 <h3><i class="fas fa-info-circle"></i> Project Details</h3>
+                <!-- Overview Paragraph -->
                 <p style="color: #555; line-height: 1.6;">
                     Produced a research presentation exploring the role of emerging robotic systems within the low-altitude economy (UAVs and drones). 
                     The research focused on how these technologies intersect with the UN Sustainable Development Goals (SDGs), analyzing both the environmental benefits and the ethical challenges regarding their adoption.
@@ -268,11 +276,12 @@
             </div>
         </div>
     </div>
+
     <!-- Modal 4: Xiaomi -->
     <div id="modal-project-4" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal('modal-project-4')">&times;</span>
-            <h2>Xiaomi AIoT Platform: Smart Sauna Thermometer</h2>
+            <h2>Xiaomi Studio AIoT Development Platform Training Camp</h2>
             <div class="modal-media" style="margin-bottom: 20px;">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
                     <img src="assets/project4-detail1.png" alt="Module Design" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px;">
@@ -281,13 +290,20 @@
             </div>
             <div class="modal-text">
                 <h3><i class="fas fa-info-circle"></i> Project Details <span style="font-size: 0.9rem; color: #f39c12; background: #fff3e0; padding: 3px 8px; border-radius: 12px; margin-left: 10px;">Excellent Prize</span></h3>
+                <!-- Overview Paragraph -->
                 <p style="color: #555; line-height: 1.6;">
-                    Responsible for requirement analysis and module design, such as temperature and humidity display switching, alarm level switching, chip communication methods, etc.
-                    Collaborated with teammates on hardware assembly, software programming in C language using the Keil-ARM development environment, testing, etc.
+                    Developed a Smart Sauna Room Thermometer Alarm during the Xiaomi Studio AIoT Development Platform Training Camp, achieving the Excellent Prize.
                 </p>
+                <!-- Bullet Points -->
+                <ul style="color: #555; line-height: 1.6; margin-left: 20px; margin-top: 10px;">
+                    <li><strong>System Architecture:</strong> Responsible for requirement analysis and module design, defining logic for temperature/humidity display switching and alarm levels.</li>
+                    <li><strong>Embedded Programming:</strong> Programmed the core firmware in C using the Keil-ARM development environment, managing chip communication protocols.</li>
+                    <li><strong>Hardware Integration:</strong> Collaborated on physical hardware assembly, circuit testing, and seamless integration with the Xiaomi AIoT platform.</li>
+                </ul>
             </div>
         </div>
     </div>
+
     <!-- Modal 6: MIPS32 CPU -->
     <div id="modal-project-6" class="modal">
         <div class="modal-content">
@@ -299,9 +315,11 @@
             </div>
             <div class="modal-text">
                 <h3><i class="fas fa-info-circle"></i> Project Details</h3>
+                <!-- Overview Paragraph -->
                 <p style="color: #555; line-height: 1.6;">
                     Designed and implemented a 32-bit MIPS pipelined CPU with a 5-stage architecture using Verilog and Vivado, covering the complete instruction pipeline from fetch to write-back.
                 </p>
+                <!-- Bullet Points -->
                 <ul style="color: #555; line-height: 1.6; margin-left: 20px; margin-top: 10px;">
                     <li><strong>Pipeline Architecture:</strong> Built a full 5-stage instruction pipeline supporting R/I/J-type instructions for sequential execution flow.</li>
                     <li><strong>Hazard Mitigation:</strong> Implemented control hazard handling via delay slots and resolved structural hazards using pipeline stalling strategies.</li>
@@ -403,7 +421,7 @@
                 <div class="exp-header">
                     <!-- Left side: Logo + Title & University -->
                     <div class="exp-header-left">
-                        <img src="assets/logo-manchester.png" alt="University of Manchester Logo" class="exp-logo">
+                        <img src="assets/logo-manchester.jpg" alt="University of Manchester Logo" class="exp-logo">
                         <div class="exp-title-company">
                             <h3>MSc Robotics</h3>
                             <h4><i class="fas fa-university"></i> University of Manchester, United Kingdom</h4>
