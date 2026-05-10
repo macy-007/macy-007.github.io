@@ -29,17 +29,17 @@
             <h1>Hi, I'm Mingyi Yuan</h1>
             <h2>Robotics Software Engineer / Systems & Product Architect</h2>
             <p class="bio">
-                I am a Robotics Engineer with experience in product management and system design. 
-                My work focuses on building robotics and AI systems that connect embedded software with higher-level product requirements. 
-                With a Computer Science background, I am particularly interested in Embodied AI and real-world robotics applications.
+                I am a Robotics Engineer with a background in Computer Science and Product Management, currently transitioning into robotics software engineering and product architecture. 
+                I focus on designing system-level solutions that integrate embedded software, robotics stacks, and product requirements into scalable architectures. 
+                My research interest lies in Embodied AI and real-world robotic systems.
             </p>
             <div class="objectives" style="text-align: left; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); margin-top: 20px;">
-                <h3 style="font-size: 1.1rem; margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #00b894; display: inline-block;">Career Objectives & Research Focus</h3>
+                <h3 style="font-size: 1.1rem; margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #00b894; display: inline-block;">Technical Focus & Research Direction</h3>
                 <p style="margin-bottom: 10px;">
-                    <strong>Targets:</strong> Robotics Embedded Systems, System Architecture, Product Design
+                    <strong>Focus Areas:</strong> Robotics Embedded Systems, System Architecture, Product & Platform Design
                 </p>
                 <p style="margin-top: 5px;">
-                    <strong>Interests:</strong> Embodied AI, Human-Robot Interaction (HRI)
+                    <strong>Research Direction:</strong> Embodied AI, Human-Robot Interaction (HRI)
                 </p>
                 <p style="margin-top: 15px; font-style: italic; color: #00b894; font-weight: 600;">
                     <i class="fas fa-paper-plane"></i> Actively seeking new opportunities. Let's connect!
@@ -101,7 +101,6 @@
     <section id="projects" class="projects-section" style="background-color: #fdfdfd; padding: 60px 0;">
         <div class="container">
             <h2>Projects</h2>
-            <!-- Project Grid: Responsive 3-column layout -->
             <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
                 <!-- Project 1: Autonomous Robot -->
                 <div class="project-card" onclick="openModal('modal-project-1')">
@@ -111,7 +110,7 @@
                     </div>
                     <div class="project-info">
                         <h3>Autonomous Retrieval Robot</h3>
-                        <p class="short-desc">ROS2-based robotic system for autonomous search, retrieval, and sorting using computer vision.</p>
+                        <p class="short-desc">ROS2-based robotic system for autonomous search, retrieval, and sorting.</p>
                     </div>
                 </div>
                 <!-- Project 2: LiDAR -->
@@ -159,34 +158,38 @@
                     </div>
                 </div>
             </div>
+            <!-- Mini Projects -->
             <div class="mini-projects-section" style="margin-top: 50px;">
                 <h3 style="font-size: 1.4rem; color: #333; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
                     <i class="fas fa-microchip" style="color: #555;"></i> Others
                 </h3>
                 <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-                    <!-- Coursework 1: UAV -->
-                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #555;">
-                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">UAV Parameter Tuning & Flight Control</strong>
+                    <!-- Coursework 1: UAS Position Stabilisation -->
+                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid var(--primary-color);">
+                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">UAV Feedback Control</strong>
                         <span style="color: #666; font-size: 0.9rem; line-height: 1.6; display: block;">
-                            <em>(Ongoing)</em> Optimizing flight control parameters (e.g., PID tuning) for a drone platform to ensure stable flight dynamics and rapid control responsiveness.
+                            Implemented a cascade PID-based flight control system in Python for an Unmanned Aerial Vehicle (UAV) to achieve stable trajectory tracking. Integrated real-time sensor telemetry processing, coordinate frame transformations, and actuator command generation for point-to-point flight control.
                         </span>
                     </li>
-                    <!-- Coursework 2: A* Algorithm -->
-                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #555;">
-                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">A* Pathfinding Algorithm Implementation</strong>
+
+                    <!-- Coursework 2: A* Pathfinding -->
+                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid var(--primary-color);">
+                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">A* Path Planning Algorithm Implementation</strong>
                         <span style="color: #666; font-size: 0.9rem; line-height: 1.6; display: block;">
-                            Developed a grid-based A* search algorithm from scratch, demonstrating a solid foundation in classic algorithmic path planning and heuristic optimization.
+                            Developed an A* pathfinding algorithm in Python for a generalized robotic system. The implementation autonomously calculates safe and efficient routes through terrain, simulating core navigational decision-making to enhance reliability and reduce operator workload.
                         </span>
                     </li>
-                    <!-- Coursework 3: Serial Decoding -->
-                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #555;">
-                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">Serial Protocol Decoding Analysis</strong>
+
+                    <!-- Coursework 3: Serial Protocol Decoding -->
+                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid var(--primary-color);">
+                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">Serial Protocol Decoding & Data Parsing</strong>
                         <span style="color: #666; font-size: 0.9rem; line-height: 1.6; display: block;">
-                            Analyzed and decoded low-level hardware communication signals, reinforcing my understanding of embedded system data transmission.
+                            Created a program to decode sequential serial data streams into human-readable values based on a protocol definition table.
                         </span>
                     </li>
+
                     <!-- Coursework 4: OS Simulation -->
-                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #555;">
+                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid var(--primary-color);">
                         <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">Operating System Simulation (C++)</strong>
                         <span style="color: #666; font-size: 0.9rem; line-height: 1.6; display: block;">
                             Simulated core OS mechanisms including memory allocation (FIFO page replacement), disk/directory management (mixed-index, bitmap), and multi-thread synchronization to prevent deadlocks.
@@ -213,9 +216,9 @@
             <div class="modal-text">
                 <h3><i class="fas fa-info-circle"></i> Project Details</h3>
                 <p style="color: #555; line-height: 1.6;">
-                    Developed an autonomous robotic system designed to navigate unknown environments, search for colored objects, and transport them to matching bins. 
-                    I focused on system integration and state machine design to handle high-level logic (search, approach, retrieval, sorting). 
-                    The project involved integrating a YOLOv8-based vision pipeline with the ROS2 navigation stack, and validating the performance using Gazebo simulation before physical hardware deployment.
+                    Developed an autonomous robotic system for navigating unknown environments, detecting colored objects, and performing object transportation tasks. 
+                    Led system integration and state machine design for high-level behavior logic, including search, approach, retrieval, and sorting. 
+                    Supported integration of a YOLOv8-based perception pipeline and ROS2 navigation stack, with simulation validation conducted in Gazebo prior to hardware deployment.
                 </p>
                 <div class="modal-links" style="margin-top: 15px;">
                     <a href="https://github.com/IvaJorgusheska/AERO62520-Robotic-Systems-Design-Project" target="_blank" class="btn-link">GitHub Repository <i class="fab fa-github"></i></a>
@@ -297,12 +300,12 @@
             <div class="modal-text">
                 <h3><i class="fas fa-info-circle"></i> Project Details</h3>
                 <p style="color: #555; line-height: 1.6;">
-                    Designed and simulated a MIPS32 static 5-stage pipelined CPU using Verilog and Vivado. 
+                    Designed and implemented a 32-bit MIPS pipelined CPU with a 5-stage architecture using Verilog and Vivado, covering the complete instruction pipeline from fetch to write-back.
                 </p>
                 <ul style="color: #555; line-height: 1.6; margin-left: 20px; margin-top: 10px;">
-                    <li><strong>Instruction Set:</strong> Implemented 21 instructions including R-Type (ADD, SUB, AND, XOR), I-Type (ADDIU, LW, SW, BEQ), and J-Type (JAL, JR).</li>
-                    <li><strong>Hazard Handling:</strong> Implemented delay slot technology to handle control hazards caused by branch instructions, and handled structural hazards by stalling upstream pipeline stages.</li>
-                    <li><strong>Modules:</strong> Wrote custom Verilog modules for program counter, decoding, general registers, execution, memory access, and a custom 32-bit comparator.</li>
+                    <li><strong>Pipeline Architecture:</strong> Built a full 5-stage instruction pipeline supporting R/I/J-type instructions for sequential execution flow.</li>
+                    <li><strong>Hazard Mitigation:</strong> Implemented control hazard handling via delay slots and resolved structural hazards using pipeline stalling strategies.</li>
+                    <li><strong>System Design:</strong> Developed modular CPU components including ALU, register file, control unit, memory interface, and comparator logic.</li>
                 </ul>
             </div>
         </div>
@@ -310,17 +313,22 @@
 
 
 
-    <!-- Work Experience -->
+    <!-- Work Experience Section -->
     <section id="experience" class="experience-section">
         <h2>Professional Experience</h2>       
         <div class="experience-container">
             <!-- Lilith Games -->
             <div class="exp-card">
                 <div class="exp-header">
-                    <div class="exp-title-company">
-                        <h3>Junior Product Manager （Support Platform）</h3>
-                        <h4><i class="fas fa-building"></i> Lilith Games Co., Ltd.</h4>
+                    <!-- Left side: Logo + Title & Company -->
+                    <div class="exp-header-left">
+                        <img src="assets/logo-lilith.png" alt="Lilith Games Logo" class="exp-logo">
+                        <div class="exp-title-company">
+                            <h3>Junior Product Manager (Support Platform)</h3>
+                            <h4><i class="fas fa-building"></i> Lilith Games Co., Ltd.</h4>
+                        </div>
                     </div>
+                    <!-- Right side: Date -->
                     <div class="exp-date">
                         <span><i class="far fa-calendar-alt"></i> Jul 2024 - Apr 2025</span>
                     </div>
@@ -332,32 +340,44 @@
                     </ul>
                 </div>
             </div>
+
             <!-- Momenta Internship -->
             <div class="exp-card">
                 <div class="exp-header">
-                    <div class="exp-title-company">
-                        <h3>Product Intern (Advanced Driver Assistance Systems)</h3>
-                        <h4><i class="fas fa-building"></i> Momenta Co., Ltd.</h4>
+                    <!-- Left side: Logo + Title & Company -->
+                    <div class="exp-header-left">
+                        <img src="assets/logo-momenta.png" alt="Momenta Logo" class="exp-logo">
+                        <div class="exp-title-company">
+                            <h3>Product Intern (Advanced Driver Assistance Systems)</h3>
+                            <h4><i class="fas fa-building"></i> Momenta Co., Ltd.</h4>
+                        </div>
                     </div>
+                    <!-- Right side: Date -->
                     <div class="exp-date">
                         <span><i class="far fa-calendar-alt"></i> Jan 2024 - Mar 2024</span>
                     </div>
                 </div>
                 <div class="exp-details">
                     <ul>
-                        <li>Led functional iteration and cross-functional delivery of Blind Spot Detection (BSD) and Door Opening Warning (DOW) features within the Advanced Driver Assistance System (ADAS).</li>
+                        <li>Led functional iteration and cross-functional delivery of <strong>Blind Spot Detection (BSD)</strong> and <strong>Door Opening Warning (DOW)</strong> features within the Advanced Driver Assistance System (ADAS).</li>
                         <li>Designed edge-case scenario datasets and validation criteria for misidentification and false-alarm suppression, establishing strict scenario boundaries and testing standards.</li>
                         <li>Collaborated with algorithm engineering teams to optimize detection performance, reducing scenario-specific error rates from <strong>60% to 10%</strong>.</li>
                     </ul>
                 </div>
             </div>
+
             <!-- NIO Internship -->
             <div class="exp-card">
                 <div class="exp-header">
-                    <div class="exp-title-company">
-                        <h3>Product Intern (Low-code Platform)</h3>
-                        <h4><i class="fas fa-building"></i> NIO Co., Ltd.</h4>
+                    <!-- Left side: Logo + Title & Company -->
+                    <div class="exp-header-left">
+                        <img src="assets/logo-nio.png" alt="NIO Logo" class="exp-logo">
+                        <div class="exp-title-company">
+                            <h3>Product Intern (Low-code Platform)</h3>
+                            <h4><i class="fas fa-building"></i> NIO Co., Ltd.</h4>
+                        </div>
                     </div>
+                    <!-- Right side: Date -->
                     <div class="exp-date">
                         <span><i class="far fa-calendar-alt"></i> Jan 2023 - Apr 2023</span>
                     </div>
@@ -373,17 +393,23 @@
         </div>
     </section>
 
-    <!-- Education -->
+    <!-- Education Section -->
     <section id="education" class="experience-section" style="background-color: #ffffff;">
         <h2>Education Background</h2>        
         <div class="experience-container">
+            
             <!-- Master Degree -->
             <div class="exp-card" style="border-left: 5px solid #00b894;">
                 <div class="exp-header">
-                    <div class="exp-title-company">
-                        <h3>MSc Robotics</h3>
-                        <h4><i class="fas fa-university"></i> University of Manchester, United Kingdom</h4>
+                    <!-- Left side: Logo + Title & University -->
+                    <div class="exp-header-left">
+                        <img src="assets/logo-manchester.png" alt="University of Manchester Logo" class="exp-logo">
+                        <div class="exp-title-company">
+                            <h3>MSc Robotics</h3>
+                            <h4><i class="fas fa-university"></i> University of Manchester, United Kingdom</h4>
+                        </div>
                     </div>
+                    <!-- Right side: Date -->
                     <div class="exp-date">
                         <span style="color: #00b894;"><i class="far fa-calendar-alt"></i> Sep 2025 - Sep 2026</span>
                     </div>
@@ -394,13 +420,19 @@
                     </ul>
                 </div>
             </div>
+
             <!-- Bachelor Degree -->
             <div class="exp-card" style="border-left: 5px solid #00b894;">
                 <div class="exp-header">
-                    <div class="exp-title-company">
-                        <h3>BEng Computer Science</h3>
-                        <h4><i class="fas fa-university"></i> Northeastern University, China</h4>
+                    <!-- Left side: Logo + Title & University -->
+                    <div class="exp-header-left">
+                        <img src="assets/logo-neu.png" alt="Northeastern University Logo" class="exp-logo">
+                        <div class="exp-title-company">
+                            <h3>BEng Computer Science</h3>
+                            <h4><i class="fas fa-university"></i> Northeastern University, China</h4>
+                        </div>
                     </div>
+                    <!-- Right side: Date -->
                     <div class="exp-date">
                         <span style="color: #00b894;"><i class="far fa-calendar-alt"></i> Sep 2020 - Jun 2024</span>
                     </div>

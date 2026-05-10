@@ -2,8 +2,8 @@
 :root {
     --primary-color: #00b894;       /* Primary color: Tech Cyan */
     --primary-hover: #55efc4;       /* Hover color: Light Cyan */
-    --secondary-color: #2d3436;     /* Secondary color: Dark Slate Gray (for text, nav, footer) */
-    --bg-light: #f9fdfc;            /* Background color: Extremely light cyan-white for breathability */
+    --secondary-color: #2d3436;     /* Secondary color: Dark Slate Gray */
+    --bg-light: #f9fdfc;            /* Background color: Extremely light cyan-white */
     --text-gray: #555555;           /* Body text gray */
     --text-light-gray: #7f8c8d;     /* Secondary text gray */
 }
@@ -23,6 +23,13 @@ body {
     line-height: 1.6;
 }
 
+/* Master container for maintaining the golden reading width (1150px) */
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 /* --- 3. Navigation Bar --- */
 header {
     background-color: var(--secondary-color);
@@ -31,7 +38,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* Top decorative tech cyan line */
+    /* Top decorative line */
     border-bottom: 3px solid var(--primary-color); 
 }
 
@@ -61,7 +68,7 @@ nav {
 /* --- 4. About Section --- */
 .about-section {
     text-align: center;
-    padding: 80px 20px;
+    padding: 80px 5%; /* Adjusted padding */
     background: linear-gradient(to bottom, #ffffff, var(--bg-light));
 }
 
@@ -75,7 +82,7 @@ nav {
     transition: transform 0.3s ease;
 }
 
-/* Avatar slight zoom effect on hover */
+/* Avatar hover effect */
 .avatar:hover {
     transform: scale(1.05); 
 }
@@ -93,7 +100,7 @@ nav {
 }
 
 .bio, .objectives {
-    max-width: 800px;
+    max-width: 900px; /* Constrained width for better readability */
     margin: 0 auto 15px auto;
     font-size: 1.1rem;
     color: var(--text-gray);
@@ -140,7 +147,7 @@ nav {
 
 /* --- 6. Skills & Projects Sections --- */
 .skills-section, .projects-section {
-    padding: 60px 10%;
+    padding: 60px 5%; /* Reduced padding to utilize screen space better */
     text-align: center;
 }
 
@@ -184,7 +191,8 @@ nav {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Responsive columns, perfect for 3 items per row on desktop */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
     gap: 30px;
 }
 
@@ -237,9 +245,9 @@ nav {
     color: var(--primary-hover);
 }
 
-/* --- 7. Work & Internship Experience Section --- */
+/* --- 7. Work & Education Experience Section --- */
 .experience-section {
-    padding: 60px 10%;
+    padding: 60px 5%;
     background: var(--bg-light);
     text-align: center;
 }
@@ -251,7 +259,7 @@ nav {
 }
 
 .experience-container {
-    max-width: 900px;
+    max-width: 1150px; /* Aligned exactly with .container */
     margin: 30px auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -264,7 +272,7 @@ nav {
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    /* Left tech cyan decorative line */
+    /* Left cyan line */
     border-left: 5px solid var(--primary-color); 
     transition: transform 0.2s ease;
 }
@@ -273,19 +281,38 @@ nav {
     transform: translateX(5px);
 }
 
+/* Layout for header including logo, title, and date */
 .exp-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Center aligned to fit the logo properly */
     border-bottom: 1px solid #eee;
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
 
+.exp-header-left {
+    display: flex;
+    align-items: center; /* Vertically align logo and text */
+    gap: 18px; /* Space between logo and text */
+}
+
+/* Standardized logo styles */
+.exp-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain; /* Ensure logo fits without distortion */
+    border-radius: 8px;
+    background-color: #ffffff; /* White background for transparent PNGs */
+    padding: 3px; 
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
 .exp-title-company h3 {
     font-size: 1.3rem;
     color: var(--secondary-color);
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .exp-title-company h4 {
@@ -315,31 +342,24 @@ nav {
 /* --- Bubble Tags Styling --- */
 .skill-tags {
     display: flex;
-    /* Allow tags to wrap automatically */
     flex-wrap: wrap; 
-    /* Gap between tags */
     gap: 10px; 
     margin-top: 15px;
 }
 
 .skill-tags span {
-    /* Extremely light tech cyan background */
     background-color: rgba(0, 184, 148, 0.1); 
-    /* Tech cyan text */
     color: var(--primary-color); 
     padding: 6px 14px;
-    /* Rounded bubble shape */
     border-radius: 20px; 
     font-size: 0.9rem;
     font-weight: 600;
-    /* Slight border for texture */
     border: 1px solid rgba(0, 184, 148, 0.3); 
     transition: all 0.3s ease;
-    /* Keep default cursor on hover, no pointer */
     cursor: default; 
 }
 
-/* Hover effect: color invert and slight float */
+/* Tags hover effect */
 .skill-tags span:hover {
     background-color: var(--primary-color);
     color: #ffffff;
@@ -347,7 +367,7 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 184, 148, 0.2);
 }
 
-/* --- Enhanced Project Card Hover Effects --- */
+/* --- Enhanced Project Card Image Wrapper --- */
 .card-img-wrapper {
     position: relative;
     overflow: hidden;
@@ -357,7 +377,6 @@ nav {
 .overlay-text {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    /* Semi-transparent tech cyan overlay */
     background: rgba(0, 184, 148, 0.8); 
     color: white;
     display: flex;
@@ -369,7 +388,6 @@ nav {
     transition: opacity 0.3s ease;
 }
 
-/* Show 'View Details' on hover */
 .project-card:hover .overlay-text {
     opacity: 1; 
 }
@@ -381,18 +399,14 @@ nav {
 
 /* --- Modal Base Styling --- */
 .modal {
-    /* Hidden by default */
     display: none; 
     position: fixed;
     z-index: 2000;
     left: 0; top: 0; width: 100%; height: 100%;
-    /* Black semi-transparent background */
     background-color: rgba(0, 0, 0, 0.7); 
-    /* Blur effect for premium feel */
     backdrop-filter: blur(5px); 
     align-items: center;
     justify-content: center;
-    /* Scrollable if content is too long */
     overflow-y: auto; 
 }
 
@@ -402,7 +416,6 @@ nav {
     padding: 40px;
     border-radius: 12px;
     width: 90%;
-    /* Maximum width of modal */
     max-width: 900px; 
     position: relative;
     animation: fadeIn 0.3s ease;
@@ -425,7 +438,7 @@ nav {
 
 .close-btn:hover { color: #333; }
 
-/* --- Modal Media & Text Typography --- */
+/* --- Modal Media & Typography --- */
 .modal-content h2 {
     margin-bottom: 20px;
     color: var(--secondary-color);
@@ -446,7 +459,6 @@ nav {
 
 .image-gallery {
     display: grid;
-    /* Two images side-by-side */
     grid-template-columns: 1fr 1fr; 
     gap: 15px;
 }
@@ -515,6 +527,7 @@ footer {
     
     .exp-header {
         flex-direction: column;
+        align-items: flex-start; /* Stack items neatly on smaller screens */
     }
     
     .exp-date {
