@@ -1,0 +1,523 @@
+/* --- 1. Global Color Scheme (Tech Cyan Theme) --- */
+:root {
+    --primary-color: #00b894;       /* Primary color: Tech Cyan */
+    --primary-hover: #55efc4;       /* Hover color: Light Cyan */
+    --secondary-color: #2d3436;     /* Secondary color: Dark Slate Gray (for text, nav, footer) */
+    --bg-light: #f9fdfc;            /* Background color: Extremely light cyan-white for breathability */
+    --text-gray: #555555;           /* Body text gray */
+    --text-light-gray: #7f8c8d;     /* Secondary text gray */
+}
+
+/* --- 2. Global Settings --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Modern sans-serif font stack */
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* --- 3. Navigation Bar --- */
+header {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Top decorative tech cyan line */
+    border-bottom: 3px solid var(--primary-color); 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- 4. About Section --- */
+.about-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #ffffff, var(--bg-light));
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Avatar slight zoom effect on hover */
+.avatar:hover {
+    transform: scale(1.05); 
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.about-content h2 {
+    color: var(--text-light-gray);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.bio, .objectives {
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    font-size: 1.1rem;
+    color: var(--text-gray);
+}
+
+/* Special styling for objective cards */
+.objectives {
+    border-top: 4px solid var(--primary-color) !important; 
+}
+
+/* --- 5. Social Link Buttons --- */
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.cv-btn {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+.cv-btn:hover {
+    background-color: var(--primary-hover) !important;
+    color: var(--secondary-color) !important;
+}
+
+/* --- 6. Skills & Projects Sections --- */
+.skills-section, .projects-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.skills-section h2, .projects-section h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-category {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 250px;
+    border-top: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.skill-category:hover {
+    border-top: 3px solid var(--primary-color);
+}
+
+.skill-category h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.section-desc {
+    margin-bottom: 30px;
+    color: var(--text-light-gray);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+/* Cyan glow on hover */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 184, 148, 0.15); 
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-right: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: var(--primary-hover);
+}
+
+/* --- 7. Work & Internship Experience Section --- */
+.experience-section {
+    padding: 60px 10%;
+    background: var(--bg-light);
+    text-align: center;
+}
+
+.experience-section h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.experience-container {
+    max-width: 900px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.exp-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    /* Left tech cyan decorative line */
+    border-left: 5px solid var(--primary-color); 
+    transition: transform 0.2s ease;
+}
+
+.exp-card:hover {
+    transform: translateX(5px);
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.exp-title-company h3 {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.exp-title-company h4 {
+    font-size: 1rem;
+    color: var(--text-light-gray);
+    font-weight: 500;
+}
+
+.exp-date {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.exp-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--text-gray);
+}
+
+.exp-details ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* --- Bubble Tags Styling --- */
+.skill-tags {
+    display: flex;
+    /* Allow tags to wrap automatically */
+    flex-wrap: wrap; 
+    /* Gap between tags */
+    gap: 10px; 
+    margin-top: 15px;
+}
+
+.skill-tags span {
+    /* Extremely light tech cyan background */
+    background-color: rgba(0, 184, 148, 0.1); 
+    /* Tech cyan text */
+    color: var(--primary-color); 
+    padding: 6px 14px;
+    /* Rounded bubble shape */
+    border-radius: 20px; 
+    font-size: 0.9rem;
+    font-weight: 600;
+    /* Slight border for texture */
+    border: 1px solid rgba(0, 184, 148, 0.3); 
+    transition: all 0.3s ease;
+    /* Keep default cursor on hover, no pointer */
+    cursor: default; 
+}
+
+/* Hover effect: color invert and slight float */
+.skill-tags span:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 184, 148, 0.2);
+}
+
+/* --- Enhanced Project Card Hover Effects --- */
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    /* Semi-transparent tech cyan overlay */
+    background: rgba(0, 184, 148, 0.8); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show 'View Details' on hover */
+.project-card:hover .overlay-text {
+    opacity: 1; 
+}
+
+.short-desc {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}
+
+/* --- Modal Base Styling --- */
+.modal {
+    /* Hidden by default */
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0; width: 100%; height: 100%;
+    /* Black semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7); 
+    /* Blur effect for premium feel */
+    backdrop-filter: blur(5px); 
+    align-items: center;
+    justify-content: center;
+    /* Scrollable if content is too long */
+    overflow-y: auto; 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    /* Maximum width of modal */
+    max-width: 900px; 
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px; right: 25px;
+    color: #aaa;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover { color: #333; }
+
+/* --- Modal Media & Text Typography --- */
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.modal-media {
+    margin-bottom: 25px;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #000;
+}
+
+.image-gallery {
+    display: grid;
+    /* Two images side-by-side */
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.modal-text h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.modal-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: var(--text-gray);
+}
+
+.modal-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.btn-link {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-link:hover {
+    background-color: var(--primary-color);
+}
+
+/* --- 8. Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin-top: 40px;
+    border-top: 3px solid var(--primary-color);
+}
+
+/* --- 9. Responsive Design (Mobile Support) --- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .skills-container {
+        flex-direction: column;
+    }
+    
+    .exp-header {
+        flex-direction: column;
+    }
+    
+    .exp-date {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mingyi Yuan - CPD Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <div class="logo">Mingyi Yuan</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <img src="assets/profile.jpg" alt="Mingyi Yuan" class="avatar">
+            <h1>Hi, I'm Mingyi Yuan</h1>
+            <h2>Robotics Software Engineer / Systems & Product Architect</h2>
+            <p class="bio">
+                I am a Robotics Engineer with experience in product management and system design. 
+                My work focuses on building robotics and AI systems that connect embedded software with higher-level product requirements. 
+                With a Computer Science background, I am particularly interested in Embodied AI and real-world robotics applications.
+            </p>
+            <div class="objectives" style="text-align: left; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); margin-top: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 12px; color: #2c3e50; border-bottom: 2px solid #00b894; display: inline-block;">Career Objectives & Research Focus</h3>
+                <p style="margin-bottom: 10px;">
+                    <strong>Targets:</strong> Robotics Embedded Systems, System Architecture, Product Design
+                </p>
+                <p style="margin-top: 5px;">
+                    <strong>Interests:</strong> Embodied AI, Human-Robot Interaction (HRI)
+                </p>
+                <p style="margin-top: 15px; font-style: italic; color: #00b894; font-weight: 600;">
+                    <i class="fas fa-paper-plane"></i> Actively seeking new opportunities. Let's connect!
+                </p>
+            </div>
+            <div class="social-links" style="margin-top: 25px;">
+                <a href="https://github.com/macy-007" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/mingyi-yuan-7ba12138b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="assets/resume.pdf" target="_blank" class="cv-btn"><i class="fas fa-file-alt"></i> Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Robotics & AI</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>C/C++</span>
+                    <span>ROS/ROS2</span>
+                    <span>PyTorch</span>
+                    <span>Computer Vision</span>
+                    <span>Reinforcement Learning</span>
+                    <span>Gazebo</span>
+                    <span>RViz</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>System Architecture</h3>
+                <div class="skill-tags">
+                    <span>Linux / RTOS</span>
+                    <span>Verilog</span>
+                    <span>Assembly</span>
+                    <span>Raspberry Pi</span>
+                    <span>Java</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Product & Strategy</h3>
+                <div class="skill-tags">
+                    <span>User Research</span>
+                    <span>Data Analysis</span>
+                    <span>Jira</span>
+                    <span>Confluence</span>
+                    <span>Figma</span>
+                    <span>Axure RP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" style="background-color: #fdfdfd; padding: 60px 0;">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- Project Grid: Responsive 3-column layout -->
+            <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                <!-- Project 1: Autonomous Robot -->
+                <div class="project-card" onclick="openModal('modal-project-1')">
+                    <div class="card-img-wrapper">
+                        <img src="assets/project1-thumbnail.jpg" alt="Autonomous Object Retrieval Robot">
+                        <div class="overlay-text"><i class="fas fa-search-plus"></i> View Details</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Autonomous Retrieval Robot</h3>
+                        <p class="short-desc">ROS2-based robotic system for autonomous search, retrieval, and sorting using computer vision.</p>
+                    </div>
+                </div>
+                <!-- Project 2: LiDAR -->
+                <div class="project-card" onclick="openModal('modal-project-2')">
+                    <div class="card-img-wrapper">
+                        <img src="assets/project2-thumbnail.jpg" alt="LiDAR Characterisation">
+                        <div class="overlay-text"><i class="fas fa-search-plus"></i> View Details</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>LiDAR Characterisation</h3>
+                        <p class="short-desc">Experimental evaluation of the RPLIDAR A2M12 to define perception boundaries for Leo Rover.</p>
+                    </div>
+                </div>
+                <!-- Project 3: Drones & SDGs -->
+                <div class="project-card" onclick="openModal('modal-project-3')">
+                    <div class="card-img-wrapper">
+                        <img src="assets/project3-thumbnail.png" alt="Low-Altitude Economy">
+                        <div class="overlay-text"><i class="fas fa-search-plus"></i> View Details</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Robotics Sustainability & Low-Altitude Economy</h3>
+                        <p class="short-desc">Research presentation on the role of UAVs and drones in achieving UN Sustainable Development Goals.</p>
+                    </div>
+                </div>
+                <!-- Project 4: Xiaomi AIoT -->
+                <div class="project-card" onclick="openModal('modal-project-4')">
+                    <div class="card-img-wrapper">
+                        <img src="assets/project4-thumbnail.png" alt="Xiaomi AIoT">
+                        <div class="overlay-text"><i class="fas fa-search-plus"></i> View Details</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Xiaomi Studio AIoT Development Platform Training Camp</h3>
+                        <p class="short-desc">C-based embedded development for an IoT temperature monitoring device.</p>
+                    </div>
+                </div>
+                <!-- Project 6: MIPS32 CPU -->
+                <div class="project-card" onclick="openModal('modal-project-6')">
+                    <div class="card-img-wrapper">
+                        <img src="assets/project6-thumbnail.jpg" alt="MIPS32 CPU Design">
+                        <div class="overlay-text"><i class="fas fa-search-plus"></i> View Details</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>MIPS32 5-Stage Pipelined CPU</h3>
+                        <p class="short-desc">Verilog-based CPU design implementing 21 instructions and delay slot hazard resolution.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mini-projects-section" style="margin-top: 50px;">
+                <h3 style="font-size: 1.4rem; color: #333; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px;">
+                    <i class="fas fa-microchip" style="color: #555;"></i> Others
+                </h3>
+                <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    <!-- Coursework 1: UAV -->
+                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #555;">
+                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">UAV Parameter Tuning & Flight Control</strong>
+                        <span style="color: #666; font-size: 0.9rem; line-height: 1.6; display: block;">
+                            <em>(Ongoing)</em> Optimizing flight control parameters (e.g., PID tuning) for a drone platform to ensure stable flight dynamics and rapid control responsiveness.
+                        </span>
+                    </li>
+                    <!-- Coursework 2: A* Algorithm -->
+                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #555;">
+                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">A* Pathfinding Algorithm Implementation</strong>
+                        <span style="color: #666; font-size: 0.9rem; line-height: 1.6; display: block;">
+                            Developed a grid-based A* search algorithm from scratch, demonstrating a solid foundation in classic algorithmic path planning and heuristic optimization.
+                        </span>
+                    </li>
+                    <!-- Coursework 3: Serial Decoding -->
+                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #555;">
+                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">Serial Protocol Decoding Analysis</strong>
+                        <span style="color: #666; font-size: 0.9rem; line-height: 1.6; display: block;">
+                            Analyzed and decoded low-level hardware communication signals, reinforcing my understanding of embedded system data transmission.
+                        </span>
+                    </li>
+                    <!-- Coursework 4: OS Simulation -->
+                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #555;">
+                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">Operating System Simulation (C++)</strong>
+                        <span style="color: #666; font-size: 0.9rem; line-height: 1.6; display: block;">
+                            Simulated core OS mechanisms including memory allocation (FIFO page replacement), disk/directory management (mixed-index, bitmap), and multi-thread synchronization to prevent deadlocks.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal 1: Autonomous Robot -->
+    <div id="modal-project-1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-project-1')">&times;</span>
+            <h2>Autonomous Retrieval Robot</h2>
+            <div class="modal-media">
+                <div class="video-container">
+                    <video controls preload="metadata" style="width: 100%; border-radius: 8px;">
+                        <source src="assets/promo-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="modal-text">
+                <h3><i class="fas fa-info-circle"></i> Project Details</h3>
+                <p style="color: #555; line-height: 1.6;">
+                    Developed an autonomous robotic system designed to navigate unknown environments, search for colored objects, and transport them to matching bins. 
+                    I focused on system integration and state machine design to handle high-level logic (search, approach, retrieval, sorting). 
+                    The project involved integrating a YOLOv8-based vision pipeline with the ROS2 navigation stack, and validating the performance using Gazebo simulation before physical hardware deployment.
+                </p>
+                <div class="modal-links" style="margin-top: 15px;">
+                    <a href="https://github.com/IvaJorgusheska/AERO62520-Robotic-Systems-Design-Project" target="_blank" class="btn-link">GitHub Repository <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2: LiDAR -->
+    <div id="modal-project-2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-project-2')">&times;</span>
+            <h2>LiDAR Performance Characterisation</h2>
+            <div class="modal-media">
+                <div class="video-container">
+                    <video controls preload="metadata" style="width: 100%; border-radius: 8px;">
+                        <source src="assets/project2-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="modal-text">
+                <h3><i class="fas fa-info-circle"></i> Project Details</h3>
+                <p style="color: #555; line-height: 1.6;">
+                    Evaluated the SLAMTEC RPLIDAR A2M12 sensor under real-world conditions to map its performance beyond standard datasheet specifications. 
+                    The testing process identified physical limitations and error rates, which provided necessary data to improve the obstacle avoidance and autonomous navigation integration on the Leo Rover platform.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 3: Drones -->
+    <div id="modal-project-3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-project-3')">&times;</span>
+            <h2>Robotics & Sustainability: Low-Altitude Economy</h2>
+            <div class="modal-media">
+                <div class="video-container">
+                    <video controls preload="metadata" style="width: 100%; border-radius: 8px;">
+                        <source src="assets/project3-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="modal-text">
+                <h3><i class="fas fa-info-circle"></i> Project Details</h3>
+                <p style="color: #555; line-height: 1.6;">
+                    Produced a research presentation exploring the role of emerging robotic systems within the low-altitude economy (UAVs and drones). 
+                    The research focused on how these technologies intersect with the UN Sustainable Development Goals (SDGs), analyzing both the environmental benefits and the ethical challenges regarding their adoption.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 4: Xiaomi -->
+    <div id="modal-project-4" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-project-4')">&times;</span>
+            <h2>Xiaomi AIoT Platform: Smart Sauna Thermometer</h2>
+            <div class="modal-media" style="margin-bottom: 20px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <img src="assets/project4-detail1.png" alt="Module Design" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px;">
+                    <img src="assets/project4-detail2.png" alt="C Programming" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px;">
+                </div>
+            </div>
+            <div class="modal-text">
+                <h3><i class="fas fa-info-circle"></i> Project Details <span style="font-size: 0.9rem; color: #f39c12; background: #fff3e0; padding: 3px 8px; border-radius: 12px; margin-left: 10px;">Excellent Prize</span></h3>
+                <p style="color: #555; line-height: 1.6;">
+                    Responsible for requirement analysis and module design, such as temperature and humidity display switching, alarm level switching, chip communication methods, etc.
+                    Collaborated with teammates on hardware assembly, software programming in C language using the Keil-ARM development environment, testing, etc.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 6: MIPS32 CPU -->
+    <div id="modal-project-6" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-project-6')">&times;</span>
+            <h2>MIPS32 5-Stage Pipelined CPU (Verilog)</h2>
+            <div class="modal-media" style="margin-bottom: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <img src="assets/project6-arch.jpg" alt="CPU Architecture" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                <img src="assets/project6-wave.jpg" alt="Waveform Simulation" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="modal-text">
+                <h3><i class="fas fa-info-circle"></i> Project Details</h3>
+                <p style="color: #555; line-height: 1.6;">
+                    Designed and simulated a MIPS32 static 5-stage pipelined CPU using Verilog and Vivado. 
+                </p>
+                <ul style="color: #555; line-height: 1.6; margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Instruction Set:</strong> Implemented 21 instructions including R-Type (ADD, SUB, AND, XOR), I-Type (ADDIU, LW, SW, BEQ), and J-Type (JAL, JR).</li>
+                    <li><strong>Hazard Handling:</strong> Implemented delay slot technology to handle control hazards caused by branch instructions, and handled structural hazards by stalling upstream pipeline stages.</li>
+                    <li><strong>Modules:</strong> Wrote custom Verilog modules for program counter, decoding, general registers, execution, memory access, and a custom 32-bit comparator.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Work Experience -->
+    <section id="experience" class="experience-section">
+        <h2>Professional Experience</h2>       
+        <div class="experience-container">
+            <!-- Lilith Games -->
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-title-company">
+                        <h3>Junior Product Manager （Support Platform）</h3>
+                        <h4><i class="fas fa-building"></i> Lilith Games Co., Ltd.</h4>
+                    </div>
+                    <div class="exp-date">
+                        <span><i class="far fa-calendar-alt"></i> Jul 2024 - Apr 2025</span>
+                    </div>
+                </div>
+                <div class="exp-details">
+                    <ul>
+                        <li>Led the implementation and system integration of <strong>AIGC chatbots</strong>, optimizing human-in-the-loop service workflows and reducing manual workload by 20%.</li>
+                        <li>Architected data-driven self-service modules within the Player Support Platform (e.g., Gifts Reload for <em>Call of Dragons</em>, Gacha Record Query for <em>AFK2: Journey</em>) by transforming complex backend capabilities into scalable player-facing workflows supporting 4,000+ daily interactions.</li>                    
+                    </ul>
+                </div>
+            </div>
+            <!-- Momenta Internship -->
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-title-company">
+                        <h3>Product Intern (Advanced Driver Assistance Systems)</h3>
+                        <h4><i class="fas fa-building"></i> Momenta Co., Ltd.</h4>
+                    </div>
+                    <div class="exp-date">
+                        <span><i class="far fa-calendar-alt"></i> Jan 2024 - Mar 2024</span>
+                    </div>
+                </div>
+                <div class="exp-details">
+                    <ul>
+                        <li>Led functional iteration and cross-functional delivery of Blind Spot Detection (BSD) and Door Opening Warning (DOW) features within the Advanced Driver Assistance System (ADAS).</li>
+                        <li>Designed edge-case scenario datasets and validation criteria for misidentification and false-alarm suppression, establishing strict scenario boundaries and testing standards.</li>
+                        <li>Collaborated with algorithm engineering teams to optimize detection performance, reducing scenario-specific error rates from <strong>60% to 10%</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- NIO Internship -->
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-title-company">
+                        <h3>Product Intern (Low-code Platform)</h3>
+                        <h4><i class="fas fa-building"></i> NIO Co., Ltd.</h4>
+                    </div>
+                    <div class="exp-date">
+                        <span><i class="far fa-calendar-alt"></i> Jan 2023 - Apr 2023</span>
+                    </div>
+                </div>
+                <div class="exp-details">
+                    <ul>
+                        <li>Designed the product structure and user workflows for an internal <strong>Low-code Worksheet System</strong>, translating complex business requirements into streamlined operational logic.</li>
+                        <li>Synthesized quantitative survey data and qualitative user interviews to pinpoint system bottlenecks, driving targeted feature iterations that increased overall product satisfaction from <strong>3.9 to 4.2</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="experience-section" style="background-color: #ffffff;">
+        <h2>Education Background</h2>        
+        <div class="experience-container">
+            <!-- Master Degree -->
+            <div class="exp-card" style="border-left: 5px solid #00b894;">
+                <div class="exp-header">
+                    <div class="exp-title-company">
+                        <h3>MSc Robotics</h3>
+                        <h4><i class="fas fa-university"></i> University of Manchester, United Kingdom</h4>
+                    </div>
+                    <div class="exp-date">
+                        <span style="color: #00b894;"><i class="far fa-calendar-alt"></i> Sep 2025 - Sep 2026</span>
+                    </div>
+                </div>
+                <div class="exp-details">
+                    <ul>
+                        <li><strong>Core Focus:</strong> Cognitive Robotics, Reinforcement Learning, Autonomous Mobile Robots, Robotic Systems</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bachelor Degree -->
+            <div class="exp-card" style="border-left: 5px solid #00b894;">
+                <div class="exp-header">
+                    <div class="exp-title-company">
+                        <h3>BEng Computer Science</h3>
+                        <h4><i class="fas fa-university"></i> Northeastern University, China</h4>
+                    </div>
+                    <div class="exp-date">
+                        <span style="color: #00b894;"><i class="far fa-calendar-alt"></i> Sep 2020 - Jun 2024</span>
+                    </div>
+                </div>
+                <div class="exp-details">
+                    <ul>
+                        <li><strong>Awards & Honours:</strong>
+                            <ul style="list-style-type: circle; margin-left: 20px; margin-top: 5px; margin-bottom: 12px; color: #555;">
+                                <li>Innovation & Entrepreneurship Scholarship (Mar 2023)</li>
+                                <li>Individual Scholarship (Nov 2023)</li>
+                                <li>Comprehensive Scholarship (Nov 2022)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Campus Activities:</strong>
+                            <ul style="list-style-type: circle; margin-left: 20px; margin-top: 5px; color: #555;">
+                                <li><strong>Vice President</strong>, University English Debating Society (2022 - 2023)</li>
+                                <li><strong>Head</strong>, School Culture, Sports & Art Center (2021 - 2022)</li>
+                                <li><strong>Member</strong>, Cyberspace Security Association (2020 - 2022)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Mingyi Yuan CPD Portfolio</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
