@@ -146,6 +146,17 @@
                         <p class="short-desc">C-based embedded development for an IoT temperature monitoring device.</p>
                     </div>
                 </div>
+                <!-- Project 5: UAV Feedback Control -->
+                <div class="project-card" onclick="openModal('modal-project-5')">
+                    <div class="card-img-wrapper">
+                        <img src="assets/project5-thumbnail.jpg" alt="UAV Feedback Control">
+                        <div class="overlay-text"><i class="fas fa-search-plus"></i> View Details</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>UAV Feedback Control</h3>
+                        <p class="short-desc">Python-based cascade PID flight control system for stable autonomous trajectory tracking.</p>
+                    </div>
+                </div>
                 <!-- Project 6: MIPS32 CPU -->
                 <div class="project-card" onclick="openModal('modal-project-6')">
                     <div class="card-img-wrapper">
@@ -164,14 +175,6 @@
                     <i class="fas fa-microchip" style="color: #555;"></i> Others
                 </h3>
                 <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-                    <!-- Coursework 1: UAS Position Stabilisation -->
-                    <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid var(--primary-color);">
-                        <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">UAV Feedback Control</strong>
-                        <span style="color: #666; font-size: 0.9rem; line-height: 1.6; display: block;">
-                            Implemented a cascade PID-based flight control system in Python for an Unmanned Aerial Vehicle (UAV) to achieve stable trajectory tracking. Integrated real-time sensor telemetry processing, coordinate frame transformations, and actuator command generation for point-to-point flight control.
-                        </span>
-                    </li>
-
                     <!-- Coursework 2: A* Pathfinding -->
                     <li style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid var(--primary-color);">
                         <strong style="display: block; font-size: 1.1rem; color: #333; margin-bottom: 8px;">A* Path Planning Algorithm Implementation</strong>
@@ -299,6 +302,31 @@
                     <li><strong>System Architecture:</strong> Responsible for requirement analysis and module design, defining logic for temperature/humidity display switching and alarm levels.</li>
                     <li><strong>Embedded Programming:</strong> Programmed the core firmware in C using the Keil-ARM development environment, managing chip communication protocols.</li>
                     <li><strong>Hardware Integration:</strong> Collaborated on physical hardware assembly, circuit testing, and seamless integration with the Xiaomi AIoT platform.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 5: UAV Feedback Control -->
+    <div id="modal-project-5" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-project-5')">&times;</span>
+            <h2>UAV Position Stabilisation & Feedback Control</h2>
+            
+            <!-- Media Section: Side-by-side experimental results -->
+            <div class="modal-media" style="margin-bottom: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <img src="assets/project5-result1.png" alt="Flight Trajectory Tracking Result" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                <img src="assets/project5-result2.png" alt="PID Controller Telemetry Data" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+            </div>
+            <div class="modal-text">
+                <h3><i class="fas fa-info-circle"></i> Project Details</h3>
+                <!-- Overview Paragraph -->
+                <p style="color: #555; line-height: 1.6;">
+                    Developed a Python-based cascade PID feedback control algorithm for an Unmanned Aerial Vehicle (UAV) to achieve autonomous point-to-point navigation and stable position stabilisation.
+                </p>
+                <!-- Bullet Points -->
+                <ul style="color: #555; line-height: 1.6; margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Flight Control System:</strong> Implemented a cascade PID controller to generate precise actuation commands necessary for achieving and maintaining specific vehicle states.</li>
+                    <li><strong>Trajectory Tracking:</strong> Validated the algorithm's capability to autonomously guide the UAS to designated points, establishing a robust foundation for advanced guidance and navigation methods.</li>
                 </ul>
             </div>
         </div>
